@@ -1,31 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <title>
-    Alen Begzic Home
-  </title>
+ <title>Vela</title>
+  <link rel="icon" type="image/png" href="img/favicomatic/favicon-16x16.png" sizes="16x16" />
+
+  <div>
+    <div>
+      <h1>About Me</h1>
+    </div>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vela.html">Vela</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </div>
+
+ <picture> 
+    <img src="img/AlenPic.jpeg">
+ </picture>
+
+
+
 </head>
 
 <body>
-  <header>
-    <div>
-   
-<img src="img/Logo.jpg">
-  
-       <nav>
-    <ul>
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-          <li><a href="vela.html">Vela</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  
-    </div>
-  </header>
-  <!--begining of hero section-->
   <main>
     <div>
       <div>
@@ -44,8 +49,9 @@
           <div>
             <!--left column with image-->
             <picture>
-            <img src="img/New Home 3.0 Small.jpeg">
-            </picture>
+			  <source media="(min-width:650px)" srcset="img/New Home 3.0 Small.jpeg" width="100">
+			  <img src="img/New Home 3.0.png" alt="home" width="200">
+			</picture>
           </div>
           <!--end of image column-->
           <div>
@@ -63,8 +69,9 @@
           <div>
             <!--left column with image-->
             <picture>
-              <img src="img/Home Page NFT.png" width="200" height="200">
-            </picture>
+			  <source media="(min-width:650px)" srcset="img/Home Page NFT Small.jpeg" width="100" height="100">
+			  <img src="img/Home Page NFT.png" alt="nft" width="200" height="200">
+			</picture>
           </div>
           <!--end of image column-->
           <div>
@@ -81,7 +88,7 @@
     </div>
     <!--end of whole 'My Work' section block-->
   </main>
-  <footer>
+   <footer>
     <div>
       <h2>Get in Touch</h2>
       <p>Like what you see? Get in touch with me by phone at <a href="tel:1234567890">1234567890.</a> Prefer to email?</p>
