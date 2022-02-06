@@ -1,101 +1,165 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Alen Begzic Home</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
 
-<head>
-  <meta charset="utf-8">
-  <title>
-    Alen Begzic Home
-  </title>
-</head>
+	<body class="body">
+		<header class="navigaton">
+			<div>
+				<h1>About Me</h1>
+			</div>
 
-<body>
-  <header>
-    <div>
-   
-<img src="img/Logo.jpg">
-  
-       <nav>
-    <ul>
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-          <li><a href="vela.html">Vela</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  
-    </div>
-  </header>
-  <!--begining of hero section-->
-  <main>
-    <div>
-      <div>
-        <h1>Hello my name is Alen Begzic.<br><span>A UX Researcher based in New York City.</span></h1>
-        <p> I'm passoinate about solving problmes and finding answers.</p>
-      </div>
-    </div>
-    <!--end of hero section-->
-    <!--beginning of whole 'My Work' section block-->
-    <div>
-      <div>
-        <!--container for 'My Work' section-->
-        <h2>My Work</h2>
-        <!--open row for 2 columns for Enunciate-->
-        <div>
-          <div>
-            <!--left column with image-->
-            <picture>
-            <img src="img/New Home 3.0 Small.jpeg">
-            </picture>
-          </div>
-          <!--end of image column-->
-          <div>
-            <!--open column for text-->
-            <h3>Complete Health and Fitness</h3>
-            <p>I built an spplication desgied for millinials new to diet and fitness. Stufies showen over 50% of milinelas didnt have the correct sources and information to follow a consistent diet and workout plan. There has never been a more important time than now to get healthy. </p>
-            <a href="#">View Case Study</a>
-          </div>
-          <!--end of text column-->
-        </div>
-        <!--end of row that holds 2 columns for Enunciate-->
+			<picture>
+				<img src="img/Logo.jpg" class="img" />
+			</picture>
 
-        <!--open row for 2 columns for QuikPay-->
-        <div>
-          <div>
-            <!--left column with image-->
-            <picture>
-              <img src="img/Home Page NFT.png" width="200" height="200">
-            </picture>
-          </div>
-          <!--end of image column-->
-          <div>
-            <!--open column for text-->
-            <h3>The NFT Space</h3>
-            <p>NFTs are one of the fastest growing projects on the blockchain. With over 100 etherium being traded by the day, NFTs are too powerful to ignore. I created a web broswer to help find and discover daily new NFT projects to help users get on waves before thye miss them.</p>
-            <a href="#">View Case Study</a>
-          </div>
-          <!--end of text column-->
-        </div>
-        <!--end of row that holds 2 columns for QuikPay-->
-      </div>
-      <!--end of container for 'My Work' section-->
-    </div>
-    <!--end of whole 'My Work' section block-->
-  </main>
-  <footer>
-    <div>
-      <h2>Get in Touch</h2>
-      <p>Like what you see? Get in touch with me by phone at <a href="tel:1234567890">1234567890.</a> Prefer to email?</p>
-      <div>
-     <p><a href="mailto:abegzic1080@gmail.com">Send email</a></p>
+			<nav>
+				<ul>
+					<li><a href="index.html">Work</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="vela.html">Vela</a></li>
+				</ul>
+			</nav>
+		</header>
 
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/alenbegzic/"><img src="http://via.placeholder.com/32x32"></a>
-        <a href="#"><img src="http://via.placeholder.com/32x32"></a>
-      </div>
-      
-    </div>
-  </footer>
-</body>
+		<!--begining of hero section-->
+		<main>
+			<div class="my-description">
+				<div>
+					<h1>
+						Hello my name is Alen Begzic.<br /><span
+							>A UX Researcher based in New York City.</span
+						>
+					</h1>
+					<p>I'm passoinate about solving problmes and finding answers.</p>
+				</div>
+			</div>
+			<!--end of hero section-->
+			<!--beginning of whole 'My Work' section block-->
+			<div class="my-work">
+				<div>
+					<!--container for 'My Work' section-->
+					<h2>My Work</h2>
+					<div>
+						<!--open column for text-->
+						<h3>Complete Health and Fitness</h3>
+						<p>
+							I built an spplication desgied for millinials new to diet and
+							fitness. Stufies showen over 50% of milinelas didnt have the
+							correct sources and information to follow a consistent diet and
+							workout plan. There has never been a more important time than now
+							to get healthy.
+						</p>
+					</div>
 
+					<!--open row for 2 columns for Enunciate-->
+					<div>
+						<div>
+							<!--left column with image-->
+							<picture>
+								<source
+									media="(min-width:650px)"
+									srcset="img/New Home 3.0 Small.jpeg"
+									class="img"
+								/>
+								<img src="img/New Home 3.0.png" alt="home" class="img" />
+							</picture>
+						</div>
+						<!--end of image column-->
+						<!--end of text column-->
+					</div>
+					<a href="#" class="button">View Case Study</a>
+					<!--end of row that holds 2 columns for Enunciate-->
+
+					<!--open row for 2 columns for QuikPay-->
+					<div>
+						<!--end of image column-->
+						<div>
+							<!--open column for text-->
+							<h3>The NFT Space</h3>
+							<p>
+								NFTs are one of the fastest growing projects on the blockchain.
+								With over 100 etherium being traded by the day, NFTs are too
+								powerful to ignore. I created a web broswer to help find and
+								discover daily new NFT projects to help users get on waves
+								before thye miss them.
+							</p>
+						</div>
+						<!--end of text column-->
+
+						<div>
+							<!--left column with image-->
+							<picture>
+								<source
+									media="(min-width:650px)"
+									srcset="img/Home Page NFT Small.jpeg"
+									height="100"
+									class="img"
+								/>
+								<img
+									src="img/Home Page NFT.png"
+									alt="nft"
+									height="200"
+									class="img"
+								/>
+							</picture>
+						</div>
+
+						<a href="#" class="button">View Case Study</a>
+					</div>
+					<!--end of row that holds 2 columns for QuikPay-->
+				</div>
+				<!--end of container for 'My Work' section-->
+			</div>
+			<!--end of whole 'My Work' section block-->
+		</main>
+
+		<footer class="contact-section">
+			<div>
+				<h2>Get in Touch</h2>
+				<p>
+					Like what you see? Get in touch with me by phone at
+					<a href="tel:1234567890">1234567890.</a> Prefer to email?
+				</p>
+				<div>
+					<p>
+						<a href="mailto:abegzic1080@gmail.com" class="button">Send email</a>
+					</p>
+				</div>
+
+				<div>
+					<a href="https://www.linkedin.com/in/alenbegzic/">
+						<ion-icon name="logo-linkedin"></ion-icon>
+					</a>
+
+					<a href="https://alenbegzic.medium.com">
+						<ion-icon name="logo-medium"></ion-icon>
+					</a>
+					<a href="https://www.alenbegzic.com/">
+						<ion-icon name="logo-web-component"></ion-icon>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
 </html>
