@@ -17,7 +17,7 @@
 	<body class="body">
 		<header class="navigaton">
 			<div>
-				<h1>About Me</h1>
+				<h1>Alen Begzic Home</h1>
 			</div>
 
 			<picture>
@@ -37,12 +37,9 @@
 		<main>
 			<div class="my-description">
 				<div>
-					<h1>
-						Hello my name is Alen Begzic.<br /><span
-							>A UX Researcher based in New York City.</span
-						>
-					</h1>
-					<p>I'm passoinate about solving problmes and finding answers.</p>
+					<h1>Hello my name is Alen Begzic.</h1>
+					<h3>A UX Researcher based in New York City.</h3>
+					<em>I'm passoinate about solving problmes and finding answers.</em>
 				</div>
 			</div>
 			<!--end of hero section-->
@@ -53,7 +50,14 @@
 					<h2>My Work</h2>
 					<div>
 						<!--open column for text-->
-						<h3>Complete Health and Fitness</h3>
+						<div class="work_title">
+							<div>
+								<h3>Complete Health and Fitness</h3>
+							</div>
+							<div class="work_case_study">
+								<a href="#" class="button">View Case Study</a>
+							</div>
+						</div>
 						<p>
 							I built an spplication desgied for millinials new to diet and
 							fitness. Stufies showen over 50% of milinelas didnt have the
@@ -63,31 +67,31 @@
 						</p>
 					</div>
 
-					<!--open row for 2 columns for Enunciate-->
-					<div>
-						<div>
-							<!--left column with image-->
-							<picture>
-								<source
-									media="(min-width:650px)"
-									srcset="img/New Home 3.0 Small.jpeg"
-									class="img"
-								/>
-								<img src="img/New Home 3.0.png" alt="home" class="img" />
-							</picture>
-						</div>
-						<!--end of image column-->
-						<!--end of text column-->
+					<div class="image_container">
+						<!--left column with image-->
+						<picture>
+							<source
+								media="(min-width:650px)"
+								srcset="img/New Home 3.0 Small.jpeg"
+								class="img"
+							/>
+							<img src="img/New Home 3.0.png" alt="home" class="img" />
+						</picture>
 					</div>
-					<a href="#" class="button">View Case Study</a>
-					<!--end of row that holds 2 columns for Enunciate-->
 
 					<!--open row for 2 columns for QuikPay-->
 					<div>
 						<!--end of image column-->
 						<div>
 							<!--open column for text-->
-							<h3>The NFT Space</h3>
+							<div class="work_title">
+								<div>
+									<h3>The NFT Space</h3>
+								</div>
+								<div class="work_case_study">
+									<a href="#" class="button">View Case Study</a>
+								</div>
+							</div>
 							<p>
 								NFTs are one of the fastest growing projects on the blockchain.
 								With over 100 etherium being traded by the day, NFTs are too
@@ -98,25 +102,17 @@
 						</div>
 						<!--end of text column-->
 
-						<div>
+						<div class="image_container">
 							<!--left column with image-->
 							<picture>
 								<source
 									media="(min-width:650px)"
 									srcset="img/Home Page NFT Small.jpeg"
-									height="100"
 									class="img"
 								/>
-								<img
-									src="img/Home Page NFT.png"
-									alt="nft"
-									height="200"
-									class="img"
-								/>
+								<img src="img/Home Page NFT.png" alt="nft" class="img" />
 							</picture>
 						</div>
-
-						<a href="#" class="button">View Case Study</a>
 					</div>
 					<!--end of row that holds 2 columns for QuikPay-->
 				</div>
@@ -129,8 +125,11 @@
 			<div>
 				<h2>Get in Touch</h2>
 				<p>
-					Like what you see? Get in touch with me by phone at
-					<a href="tel:1234567890">1234567890.</a> Prefer to email?
+					Like what you see? Get in touch with me by phone
+					<a href="tel:1234567890" class="icon_container"
+						><ion-icon name="call-outline"></ion-icon
+					></a>
+					Prefer to email?
 				</p>
 				<div>
 					<p>
@@ -139,14 +138,17 @@
 				</div>
 
 				<div>
-					<a href="https://www.linkedin.com/in/alenbegzic/">
+					<a
+						href="https://www.linkedin.com/in/alenbegzic/"
+						class="icon_container"
+					>
 						<ion-icon name="logo-linkedin"></ion-icon>
 					</a>
 
-					<a href="https://alenbegzic.medium.com">
+					<a href="https://alenbegzic.medium.com" class="icon_container">
 						<ion-icon name="logo-medium"></ion-icon>
 					</a>
-					<a href="https://www.alenbegzic.com/">
+					<a href="https://www.alenbegzic.com/" class="icon_container">
 						<ion-icon name="logo-web-component"></ion-icon>
 					</a>
 				</div>
