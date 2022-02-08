@@ -14,15 +14,17 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 
-	<body class="body">
-		<header class="navigaton">
+	<body class="body" id="body">
+		<header class="navigaton" id="navigaton">
 			<div>
 				<h1>Alen Begzic Home</h1>
 			</div>
 
-			<picture>
-				<img src="img/Logo.jpg" class="img" />
-			</picture>
+			<div class="logo-img" id="logo-img">
+				<picture>
+					<img src="img/Logo.jpg" class="img" />
+				</picture>
+			</div>
 
 			<nav>
 				<ul>
@@ -35,16 +37,24 @@
 
 		<!--begining of hero section-->
 		<main>
-			<div class="my-description">
-				<div>
-					<h1>Hello my name is Alen Begzic.</h1>
-					<h3>A UX Researcher based in New York City.</h3>
-					<em>I'm passoinate about solving problmes and finding answers.</em>
+			<div id="hero-section" class="hero-section">
+				<div id="my-description" class="my-description">
+					<div>
+						<h1>Hello my name is Alen Begzic.</h1>
+						<h3>A UX Researcher based in New York City.</h3>
+						<em>I'm passoinate about solving problmes and finding answers.</em>
+					</div>
+				</div>
+				<div id="hero-image" class="hero-image">
+					<picture>
+						<img src="img/AlenPic.jpeg" class="img" />
+					</picture>
 				</div>
 			</div>
+
 			<!--end of hero section-->
 			<!--beginning of whole 'My Work' section block-->
-			<div class="my-work">
+			<div class="work-section" id="work-section">
 				<div>
 					<!--container for 'My Work' section-->
 					<h2>My Work</h2>
@@ -121,7 +131,7 @@
 			<!--end of whole 'My Work' section block-->
 		</main>
 
-		<footer class="contact-section">
+		<footer class="contact-section" id="contact-section">
 			<div>
 				<h2>Get in Touch</h2>
 				<p>
