@@ -16,15 +16,12 @@
 
 	<body class="body" id="body">
 		<header class="navigaton" id="navigaton">
-			<div>
-				<h1>Alen Begzic Home</h1>
-			</div>
-
 			<div class="logo-img" id="logo-img">
 				<picture>
 					<img src="img/Logo.jpg" class="img" />
 				</picture>
 			</div>
+			<p class="nav-name" id="nav-name">Alen Begzic</p>
 
 			<nav>
 				<ul>
@@ -37,17 +34,26 @@
 
 		<main>
 			<div id="hero-section" class="hero-section">
-				<div id="my-description" class="my-description">
-					<div>
-						<h1>Hello my name is Alen Begzic.</h1>
-						<h3>A UX Researcher based in New York City.</h3>
-						<em>I'm passoinate about solving problmes and finding answers.</em>
+				<div class="flex-container">
+					<div class="flex-item-left">
+						<div id="my-description" class="my-description">
+							<div>
+								<h1>Hello my name is Alen Begzic.</h1>
+								<h3>A UX Researcher based in New York City.</h3>
+								<em
+									>I'm passoinate about solving problmes and finding
+									answers.</em
+								>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div id="hero-image" class="hero-image">
-					<picture>
-						<img src="img/AlenPic.jpeg" class="img" />
-					</picture>
+					<div class="flex-item-right">
+						<div id="hero-image" class="hero-image">
+							<picture>
+								<img src="img/AlenPic.jpeg" class="img" />
+							</picture>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -89,30 +95,34 @@
 						>Download my resume</a
 					>
 				</div>
-				<!-- end column 1 -->
 
-				<div class="my-skills" id="my-skills">
-					<h3>Skills & Tools</h3>
-					<ul>
-						<li>
-							User Experience Design (Competitor Analyses, User Interviews, User
-							Flows)
-						</li>
-						<li>User Interface Design (Components, Motion, Typography)</li>
-						<li>Prototyping</li>
-						<li>HTML/CSS & Javascript</li>
-					</ul>
-				</div>
-
-				<div class="my-tools" id="my-tools">
-					<!-- column 2 Tools I Use -->
-					<h3>Tools I Use</h3>
-					<ul>
-						<li>Adobe XD</li>
-						<li>Figma</li>
-						<li>Photoshop</li>
-						<li>InDesign</li>
-					</ul>
+				<div class="flex-container">
+					<div class="flex-item-left">
+						<div class="my-skills" id="my-skills">
+							<h3>Skills & Tools</h3>
+							<ul>
+								<li>
+									User Experience Design (Competitor Analyses, User Interviews,
+									User Flows)
+								</li>
+								<li>User Interface Design (Components, Motion, Typography)</li>
+								<li>Prototyping</li>
+								<li>HTML/CSS & Javascript</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex-item-right">
+						<div class="my-tools" id="my-tools">
+							<!-- column 2 Tools I Use -->
+							<h3>Tools I Use</h3>
+							<ul>
+								<li>Adobe XD</li>
+								<li>Figma</li>
+								<li>Photoshop</li>
+								<li>InDesign</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
@@ -150,6 +160,7 @@
 				</div>
 			</div>
 		</footer>
+
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

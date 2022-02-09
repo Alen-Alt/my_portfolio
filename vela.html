@@ -16,15 +16,12 @@
 
 	<body class="body" id="body">
 		<header class="navigaton" id="navigaton">
-			<div>
-				<h1>Alen Begzic Home</h1>
-			</div>
-
 			<div class="logo-img" id="logo-img">
 				<picture>
 					<img src="img/Logo.jpg" class="img" />
 				</picture>
 			</div>
+			<p class="nav-name" id="nav-name">Alen Begzic</p>
 
 			<nav>
 				<ul>
@@ -37,27 +34,36 @@
 
 		<main>
 			<div id="hero-section" class="hero-section">
-				<div id="my-description" class="my-description">
-					<div>
-						<h1>Hello my name is Alen Begzic.</h1>
-						<h3>A UX Researcher based in New York City.</h3>
-						<em>I'm passoinate about solving problmes and finding answers.</em>
+				<div class="flex-container">
+					<div class="flex-item-left">
+						<div id="my-description" class="my-description">
+							<div>
+								<h1>Hello my name is Alen Begzic.</h1>
+								<h3>A UX Researcher based in New York City.</h3>
+								<em
+									>I'm passoinate about solving problmes and finding
+									answers.</em
+								>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div id="hero-image" class="hero-image">
-					<picture>
-						<img src="img/AlenPic.jpeg" class="img" />
-					</picture>
+					<div class="flex-item-right">
+						<div id="hero-image" class="hero-image">
+							<picture>
+								<img src="img/AlenPic.jpeg" class="img" />
+							</picture>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<!--end of hero section-->
 			<!--beginning of whole 'My Work' section block-->
 			<div class="work-section" id="work-section">
-				<div>
-					<!--container for 'My Work' section-->
-					<h2>My Work</h2>
-					<div>
+				<!--container for 'My Work' section-->
+				<h2>My Work</h2>
+				<div class="flex-container">
+					<div class="flex-item-left">
 						<!--open column for text-->
 						<div class="work_title">
 							<div>
@@ -76,7 +82,7 @@
 						</p>
 					</div>
 
-					<div class="image_container">
+					<div class="flex-item-right">
 						<!--left column with image-->
 						<picture>
 							<source
@@ -87,43 +93,39 @@
 							<img src="img/New Home 3.0.png" alt="home" class="img" />
 						</picture>
 					</div>
+				</div>
 
-					<!--open row for 2 columns for QuikPay-->
-					<div>
-						<!--end of image column-->
-						<div>
-							<!--open column for text-->
-							<div class="work_title">
-								<div>
-									<h3>The NFT Space</h3>
-								</div>
-								<div class="work_case_study">
-									<a href="#" class="button">View Case Study</a>
-								</div>
+				<div class="flex-container">
+					<div class="flex-item-left">
+						<!--open column for text-->
+						<div class="work_title">
+							<div>
+								<h3>The NFT Space</h3>
 							</div>
-							<p>
-								NFTs are one of the fastest growing projects on the blockchain.
-								With over 100 etherium being traded by the day, NFTs are too
-								powerful to ignore. I created a web broswer to help find and
-								discover daily new NFT projects to help users get on waves
-								before thye miss them.
-							</p>
+							<div class="work_case_study">
+								<a href="#" class="button">View Case Study</a>
+							</div>
 						</div>
-						<!--end of text column-->
-
-						<div class="image_container">
-							<!--left column with image-->
-							<picture>
-								<source
-									media="(min-width:650px)"
-									srcset="img/Home Page NFT Small.jpeg"
-									class="img"
-								/>
-								<img src="img/Home Page NFT.png" alt="nft" class="img" />
-							</picture>
-						</div>
+						<p>
+							NFTs are one of the fastest growing projects on the blockchain.
+							With over 100 etherium being traded by the day, NFTs are too
+							powerful to ignore. I created a web broswer to help find and
+							discover daily new NFT projects to help users get on waves before
+							thye miss them.
+						</p>
 					</div>
-					<!--end of row that holds 2 columns for QuikPay-->
+
+					<div class="flex-item-right">
+						<!--left column with image-->
+						<picture>
+							<source
+								media="(min-width:650px)"
+								srcset="img/Home Page NFT Small.jpeg"
+								class="img"
+							/>
+							<img src="img/Home Page NFT.png" alt="nft" class="img" />
+						</picture>
+					</div>
 				</div>
 				<!--end of container for 'My Work' section-->
 			</div>

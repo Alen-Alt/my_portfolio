@@ -1,7 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+
 .body {
 	background-color: #d7d7d7;
 	font-family: "Open Sans", sans-serif;
-	box-sizing: border-box;
 }
 
 .button {
@@ -14,7 +17,6 @@
 	display: inline-block;
 	font-size: 14px;
 	border-radius: 8px;
-	box-sizing: border-box;
 }
 
 p {
@@ -36,11 +38,6 @@ a:visited {
 	color: purple;
 }
 
-a:focus,
-a:hover {
-	border-bottom: 1px solid;
-}
-
 a:active {
 	color: red;
 }
@@ -51,14 +48,15 @@ a[href*="#"] {
 }
 
 .navigaton {
-	box-sizing: border-box;
 	text-align: center;
 	margin-bottom: 10px;
+	clear: both;
+	overflow: auto;
+	background-color: #333;
 }
 
 .work-section,
 .content {
-	box-sizing: border-box;
 	background-color: #fff;
 	padding: 5px 15px;
 	margin-bottom: 10px;
@@ -66,7 +64,7 @@ a[href*="#"] {
 
 .contact-section {
 	text-align: center;
-	box-sizing: border-box;
+
 	background-color: #333;
 	padding: 15px 5px;
 	color: #fff;
@@ -77,7 +75,6 @@ a[href*="#"] {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
 }
 
 .navigaton li {
@@ -86,15 +83,17 @@ a[href*="#"] {
 
 .navigaton li a {
 	display: block;
-	color: white;
+	color: #fff;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+.navigaton li a:focus,
 .navigaton li a:hover {
-	background-color: #111;
+	border-bottom: 1px solid;
+	border-color: #fff;
+	transition: all 0.5s ease-in-out;
 }
 
 .work_title {
@@ -103,11 +102,6 @@ a[href*="#"] {
 
 .work_case_study {
 	margin-left: 10px;
-}
-
-.image_container {
-	width: 30%;
-	margin: auto;
 }
 
 .icon_container {
@@ -119,7 +113,7 @@ a[href*="#"] {
 	display: inline-block;
 	border-radius: 8px;
 	line-height: 11px;
-	box-sizing: border-box;
+
 	padding: 5px;
 }
 
@@ -128,19 +122,14 @@ a[href*="#"] {
 }
 
 .logo-img {
-	width: 30%;
-	margin: auto;
+	width: 7%;
 }
 
 .hero-section {
-	width: 100%;
-	margin: auto;
-	display: inline-flex;
 	margin-bottom: 10px;
 }
 
 .my-description {
-	box-sizing: border-box;
 	text-align: center;
 	margin-bottom: 10px;
 	width: 70%;
@@ -155,4 +144,83 @@ a[href*="#"] {
 .hero-image {
 	width: 30%;
 	margin: auto;
+}
+
+.navigaton .logo-img {
+	float: left;
+}
+
+.navigaton nav {
+	float: right;
+}
+
+.nav-name {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	margin-left: 10px;
+	color: #fff;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-item-left {
+	flex: 60%;
+}
+
+.flex-item-right {
+	flex: 40%;
+}
+
+@media (max-width: 767.98px) {
+	.flex-container {
+		flex-direction: column;
+	}
+
+	.logo-img {
+		display: none;
+	}
+
+	.nav-name {
+		margin-top: 10px;
+	}
+
+	.hero-image {
+		margin-top: 10px;
+	}
+}
+
+.button:hover,
+.button:focus {
+	background-color: black;
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+}
+
+.project-section,
+.content {
+	background-color: #fff;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+}
+
+.svg-container {
+	width: 100%;
+	animation: roll 5s infinite;
+	transform: rotate(30deg);
+}
+
+.svg-content {
+}
+
+@keyframes roll {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
